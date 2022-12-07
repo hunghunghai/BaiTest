@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="namSinh">
+<button onclick="tinhNam()">Tính</button>
+<table>
+    <tr>
+        <th>Năm :</th>
+        <th><p id="namcan"></p></th>
+        <th><p id="namchi"></p></th>
+    </tr>
+</table>
+
+
+<script>
+    function tinhNam() {
+        let nam = +document.getElementById('namSinh').value;
+        let can = nam % 10
+        let chi = nam % 12
+        switch (can){
+            case 0:
+                document.getElementById('namcan').innerHTML = 'Canh'
+                break;
+            case 1:
+                document.getElementById('namcan').innerHTML = 'Thân'
+                break;
+            case 2:
+                document.getElementById('namcan').innerHTML = 'Nhâm'
+                break;
+            case 3:
+                document.getElementById('namcan').innerHTML = 'Quý'
+                break;
+            case 4:
+                document.getElementById('namcan').innerHTML = 'Giáp'
+                break;
+            case 5:
+                document.getElementById('namcan').innerHTML = 'Ất'
+                break;
+            case 6:
+                document.getElementById('namcan').innerHTML = 'Bính'
+                break;
+            case 7:
+                document.getElementById('namcan').innerHTML = 'Đinh'
+                break;
+            case 8:
+                document.getElementById('namcan').innerHTML = 'Mậu'
+                break;
+            case 9:
+                document.getElementById('namcan').innerHTML = 'Kỷ'
+                break;
+        }
+        switch (chi){
+            case 0:
+                document.getElementById('namchi').innerHTML = 'Thân'
+                break;
+            case 1:
+                document.getElementById('namchi').innerHTML = 'Dậu'
+                break;
+            case 2:
+                document.getElementById('namchi').innerHTML = 'Tuất'
+                break;
+            case 3:
+                document.getElementById('namchi').innerHTML = 'Hợi'
+                break;
+            case 4:
+                document.getElementById('namchi').innerHTML = 'Tý'
+                break;
+            case 5:
+                document.getElementById('namchi').innerHTML = 'Sửa'
+                break;
+            case 6:
+                document.getElementById('namchi').innerHTML = 'Dần'
+                break;
+            case 7:
+                document.getElementById('namchi').innerHTML = 'Mạo'
+                break;
+            case 8:
+                document.getElementById('namchi').innerHTML = 'Thìn'
+                break;
+            case 9:
+                document.getElementById('namchi').innerHTML = 'Tỵ'
+                break;
+            case 10:
+                document.getElementById('namchi').innerHTML = 'Ngọ'
+                break;
+            case 11:
+                document.getElementById('namchi').innerHTML = 'Mùi'
+                break;
+        }
+    }
+</script>
+</body>
+</html>

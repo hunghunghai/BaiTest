@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="Điểm 1 => 2" id="canha">
+<input type="text" placeholder="Điểm 2 => 3" id="canhb">
+<input type="text" placeholder="Điểm 3 => 1" id="canhc">
+<button onclick="kiemTra()">Kiểm Tra</button>
+
+<script>
+    function kiemTra() {
+        let a = +document.getElementById('canha').value;
+        let b = +document.getElementById('canhb').value;
+        let c = +document.getElementById('canhc').value;
+        if(a + b <= c || a + c <= b ||  b + c <= a) {
+            alert("\nTam giac khong hop le. Xin kiem tra lai !");
+        }
+        else {
+            //pytago
+            if(a * a + b * b == c * c || a * c + c * c == b * b || b * b + c * c == a * c){
+                alert('Là tam giác vuông');
+            }
+            else {
+                alert('không phải tam giác vuông')
+            }
+        }
+    }
+</script>
+</body>
+</html>

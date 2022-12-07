@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="thangcon">
+<button onclick="tinhTuoi()">Tính Tuổi Thằng bố</button>
+<h3 id="ut">Tuổi Thằng Út</h3>
+<h3 id="lon">Tuổi Thằng Anh</h3>
+<h3 id="gia">Tuổi Thằng Bố</h3>
+<script>
+  function tinhTuoi() {
+    let con = +document.getElementById('thangcon').value;
+    let anh = con+3;
+    let bo = anh*6;
+    document.getElementById('ut').innerHTML = 'Tuổi thằng út là :'+ con;
+    document.getElementById('lon').innerHTML = 'Tuổi thằng lớn là :'+ anh;
+    document.getElementById('gia').innerHTML = 'Tuổi tahừng bố là :'+ bo;
+  }
+
+</script>
+</body>
+</html>
